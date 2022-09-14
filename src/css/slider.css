@@ -1,0 +1,89 @@
+.section{
+    position: absolute;
+    margin: 0 auto;
+    left: 600px;
+    max-width: 80%;
+    max-height: 670px;
+    top: 225px;
+
+}
+*{
+    margin: 0;
+}
+html, body{
+    font-size: 18px;
+}
+#button_two {
+    background: none;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: .9rem;
+}
+#button_three{
+    background: none;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: .9rem;
+}
+#button_two:hover {
+    background: #0c4128;
+}
+
+#button_three:hover{
+    background: #0c4128;
+}
+
+#button_two:active {
+    background: #000000;
+    color: #FFFFFF;
+}
+#button_three:active{
+    background: #000000;
+    color: #FFFFFF;
+}
+
+
+.slide-prev{
+    position: relative;
+
+}
+.slide-next{
+    position: relative;
+    left:830px;
+}
+.slider{
+    height: 625px;
+    width: 1024px;
+    margin: 20px auto;
+    overflow: hidden;
+}
+.slider-line{
+    display: flex;
+}
+img{
+    height: 625px;
+    width: 1024px;
+}
+.dots-block {
+    position: absolute;
+    left: 350px;
+    top: 650px;
+    margin: 20px auto;
+    display: flex;
+    height: 100px;
+}
+
+.dots-item {
+    width: 15px;
+    height: 15px;
+    background-color: black;
+    border-radius: 50%;
+    margin: 0 8px;
+    cursor: pointer;
+}
+
+.dots-item.active {
+    background-color: red;
+}
