@@ -1,18 +1,22 @@
-.section{
-    position: absolute;
-    margin: 0 auto;
-    left: 600px;
-    max-width: 80%;
-    max-height: 670px;
-    top: 225px;
-
-}
 *{
     margin: 0;
 }
-html, body{
-    font-size: 18px;
+.section{
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80%;   
 }
+.sliders_block{
+    display: flex;
+    height: 50px;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto; 
+    max-width: 1024px;
+    max-width: 80%;    
+}
+
 #button_two {
     background: none;
     border: 1px solid black;
@@ -46,16 +50,16 @@ html, body{
 
 
 .slide-prev{
-    position: relative;
+    margin-right: 0;
 
 }
 .slide-next{
-    position: relative;
-    left:830px;
+    margin-left: 0;
 }
 .slider{
-    height: 625px;
-    width: 1024px;
+    max-height: 625px;
+    max-width: 1024px;
+    max-width: 80%;
     margin: 20px auto;
     overflow: hidden;
 }
@@ -67,9 +71,6 @@ img{
     width: 1024px;
 }
 .dots-block {
-    position: absolute;
-    left: 350px;
-    top: 650px;
     margin: 20px auto;
     display: flex;
     height: 100px;
@@ -86,4 +87,80 @@ img{
 
 .dots-item.active {
     background-color: red;
+}
+
+/* media */
+@media (max-width: 790px){
+    #button_two{
+        font-size: .6rem;
+        max-height: 40px;
+        max-width: 80px;
+    }
+    #button_three{
+        font-size: .6rem;
+        max-height: 40px;
+        max-width: 80px;
+        margin-right: 0;
+    }
+    .dots-block {
+        margin: 20px auto;     
+        height: 80px;
+    }    
+    .dots-item {
+        width: 7px;
+        height: 7px;
+        margin: 0 5px;
+    }
+}
+@media (max-width: 530px){
+    #button_two{
+        font-size: .3rem;
+        max-height: 25px;
+        max-width: 55px;
+        
+    }
+    #button_three{
+        font-size: .3rem;
+        max-height: 25px;
+        max-width: 55px;
+    }
+    .dots-block {
+        margin: 10px auto;     
+        height: 80px;
+    }    
+    .dots-item {
+        width: 5px;
+        height: 5px;
+        margin: 0 4px;
+    }
+}
+@media (max-width: 400px){
+    #button_two{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: .288rem;
+        height: 18px;
+        max-width: 50px;
+        width: 100%;
+    }
+    #button_three{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: .288rem;
+        height: 18px;
+        max-width: 50px;
+        width: 100%;
+       
+    }
+    .dots-block {
+        margin: 7px auto;     
+        height: 60px;
+    }    
+    .dots-item {
+        width: 3px;
+        height: 3px;
+        margin: 0 3px;
+    }
 }
